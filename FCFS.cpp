@@ -6,8 +6,8 @@
 #include<string>
 using namespace std;
 int pro,i,j,k,arrival[100],burst[100],sec=0,wait,final_time,waiting[100],turn,l=0,n,ans,pos[10],prior[10],minimum,maximum,qt,rm[10],b;
-int last_execution[100];
-double throughput,avgwait,avgturn;
+int last_execution[100];  // taking variable in this ways allows us to use them anywhere in the code as they are declared
+double throughput,avgwait,avgturn; 
 bool ok;
 void FCFS()
 {
@@ -28,7 +28,7 @@ void FCFS()
     {
         if(i==0)
         {
-            sec=sec+burst[i];
+            sec=sec+burst[i]; 
         }
         else
         {
